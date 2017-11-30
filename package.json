@@ -2,6 +2,7 @@
   "name": "pokemon",
   "version": "1.2.1",
   "description": "Get Pokémon names",
+  "main": "lib/index.js",
   "license": "MIT",
   "repository": "sindresorhus/pokemon",
   "author": {
@@ -13,11 +14,12 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "xo && ava"
+    "test": "xo && ava",
+    "build": "babel src --presets babel-preset-env --copy-files --out-dir lib",
+    "prepare": "npm run test && npm run build"
   },
   "files": [
-    "index.js",
-    "data"
+    "lib/"
   ],
   "keywords": [
     "pokemon",
@@ -37,6 +39,8 @@
   },
   "devDependencies": {
     "ava": "*",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "xo": "*"
   },
   "xo": {

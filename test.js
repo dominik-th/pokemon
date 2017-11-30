@@ -1,5 +1,5 @@
 import test from 'ava';
-import m from '.';
+import m from './src';
 
 function testAll(t, lang, expectedNames) {
 	t.deepEqual(m.all(lang).slice(0, 3), expectedNames);

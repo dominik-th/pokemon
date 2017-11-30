@@ -2,7 +2,9 @@
 
 > Get [Pokémon](https://en.wikipedia.org/wiki/Pok%C3%A9mon) names
 
-The name list is just a [JSON file](data/en.json) and can be used wherever.
+**This is a fork of [sindresorhus' pokemon package](https://github.com/sindresorhus/pokemon) with ES5 compability. If you don't need ES5 compability please consider using his package.**
+
+The name list is just a [JSON file](src/data/en.json) and can be used wherever.
 
 ![](header.jpg)
 
